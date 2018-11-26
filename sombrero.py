@@ -4,12 +4,18 @@
 ###
 # Name: Conner Carnahan
 # Student ID: 1614309
-# Email: Carna104@mail.chapman.edu
+# Email: carna104@mail.chapman.edu
+#FULL NAME :NATANAEL ALPAY
+#ID        :002285534
+#email:alpay100@mail.chapman.edu
+
 # Course: PHYS220/MATH220/CPSC220 Fall 2018
-# Assignment: Midterm
+# Assignment: HW 10
 ###
 
+
 import numpy as np
+import sympy as sp
 import numba as nb
 import matplotlib.pyplot as plt
 
@@ -45,14 +51,17 @@ def rungekutta4th(t0,tf,x0,y0, F, m = 1.0, nu = 0.25, omega = 1.0, N = 1000):
         rk4 = dt*rdot(m,r[count-1,:]+rk3,nu,F,omega,npt[count-1])
         r[count,:] = r[count-1,:] + np.divide(rk1+2*rk2+2*rk2+rk4,6)
         print(str(r[count,:]))
-        count += 1
+        count = count + 1
     
-    plotboi(npt,r,"Plot for driven sombrero potential equation for $\nu$ = {},$x_0$ = {},$y_0$ = {},$m$ = {},$\omega$ = {},$F$ = {}".format(nu,x0,y0,m,omega,F))
+    plot(npt,r,"Plot for driven sombrero potential equation for $\nu$ = {},$x_0$ = {},$y_0$ = {},$m$ = {},$\omega$ = {},$F$ = {}".format(nu,x0,y0,m,omega,F))
     
-def plotboi(t,r,titl):
-    fig = plt.figure(figsize = (12,8))
+
+    
+@nb.jit
+def plot(t,r,titl):
+    fig = plt.figure(figsize = (16,9))
     a = plt.axes()
-    
+ 
     a.plot(t, r[:,0], label = "$x(t)$")
     a.plot(t, r[:,1], label = "$v(t)$")
     
