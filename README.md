@@ -2,7 +2,7 @@
 
 # PHYS220/MATH220/CPSC220 CW 12
 
-**Author(s):** **CHANGEME**
+**Author(s):** **Natanael Alpay, Conner Carnahan**
 
 ## Specification
 
@@ -26,9 +26,9 @@ Your homework this week will be to finish this classwork assignment, and then us
 
 ## Assessment
 
-Analyze in this section what you found useful about this assignment in your own words. Include any lingering questions or comments that you may have. You can use the GitHub web interface to edit this file directly for now.
+In this "week"(it was for more than a week) assigment we learned a lot, and it was very interesting.
 
-**CHANGEME**
+**Natanael Alpay, Conner Carnahan**
 
 ## Honor Pledge
 
@@ -39,4 +39,4 @@ I pledge that all the work in this repository is my own with only the following 
 
 Signed,
 
-**YOURNAMES**
+**Natanael Alpay, Conner Carnahan**
